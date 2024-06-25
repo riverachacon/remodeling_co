@@ -61,6 +61,7 @@ nav ul li a:hover {
 }
 img {
   width: 18rem;
+  border-radius: 10%;
 }
 .imgContainer {
   display: flex;

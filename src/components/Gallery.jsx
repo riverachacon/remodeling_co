@@ -1,5 +1,6 @@
 function Gallery(props) {
   const afterImages = props.afterImages;
+  const group = props.className;
 
   return (
     <div className="imgContainer0">
@@ -12,8 +13,18 @@ function Gallery(props) {
               className={props.className}
               src={`/images/${image}`}
               alt={`work ${index + 1}`}
-              onClick={(e) => {
-                e.currentTarget.src = `/images/${props.beforeImages.kitchen[1]}`;
+              onMouseOver={(e) => {
+                e.currentTarget.src = `/images/${
+                  props.beforeImages[group][
+                    Math.floor(Math.random() * props.beforeImages[group].length) // using bracket notation to acces group const
+                  ]
+                }`;
+              }}
+              onMouseOut={(e) => {
+                e.currentTarget.src = `/images/${image}`;
+                setTimeout(() => {
+                  e.currentTarget.style.opacity = 1;
+                }, 500); // 500ms should match the transition duration
               }}
             />
           </div>

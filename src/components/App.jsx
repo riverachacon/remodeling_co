@@ -39,6 +39,7 @@ function App() {
           title={"Outside"}
           beforeImages={beforeImages}
           afterImages={afterImages.outside}
+          className={"outside"}
         />
         <Gallery
           title={"Garage"}
