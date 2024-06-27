@@ -16,7 +16,7 @@ function Gallery(props) {
               onMouseOver={(e) => {
                 e.currentTarget.src = `/images/${
                   props.beforeImages[group][
-                    Math.floor(Math.random() * props.beforeImages[group].length) // using bracket notation to acces group const
+                    Math.floor(Math.random() * props.beforeImages[group].length) // using bracket notation to access group const
                   ]
                 }`;
               }}
@@ -24,7 +24,7 @@ function Gallery(props) {
                 e.currentTarget.src = `/images/${image}`;
                 setTimeout(() => {
                   e.currentTarget.style.opacity = 1;
-                }, 500); // 500ms should match the transition duration
+                }, 500);
               }}
             />
           </div>
