@@ -15,14 +15,7 @@ const beforeImages = {
 
 const afterImages = {
   kitchen: ["1-2-2.jpg", "1-2-3.jpg", "1-2-4.jpg", "2-2-3.jpg", "2-2-4.jpg"],
-  livingRoom: [
-    "1-2-5.jpg",
-    "2-2-2.jpg",
-    "3-2-3.jpg",
-    "2-2-1.jpg",
-    "3-2-1.jpg",
-    "3-2-6.jpg",
-  ],
+  livingRoom: ["1-2-5.jpg", "2-2-2.jpg", "3-2-3.jpg", "2-2-1.jpg", "3-2-1.jpg"],
   bathroom: ["1-2-6.jpg", "3-2-2.jpg", "3-2-5.jpg"],
   outside: ["1-2-1.jpg"],
   garage: ["1-2-7.jpg"],
