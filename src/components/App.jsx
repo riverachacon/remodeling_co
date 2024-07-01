@@ -9,11 +9,14 @@ function App() {
   return (
     <>
       <Header />
+
       <Lead />
 
       <div className="gallery">
         <div className="galleryTop">
-          <h1 id="gallery">Gallery</h1>
+          <h1 style={{ fontSize: "3.5rem" }} id="gallery">
+            Gallery
+          </h1>
           <p>Take a look at some of the projects we have completed.</p>
         </div>
 

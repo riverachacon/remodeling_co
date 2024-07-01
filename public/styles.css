@@ -101,6 +101,14 @@ img {
   margin-left: 2%;
   width: 300px;
 }
+.vl {
+  border-left: 2.5px solid #d6ccc2;
+  height: 500px;
+}
+.phoneNumber {
+  display: flex;
+  align-items: center;
+}
 
 @media (max-width: 900px) {
 }
