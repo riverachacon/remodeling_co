@@ -4,6 +4,7 @@ import { beforeImages, afterImages } from "../images";
 import About from "./About";
 import Contact from "./Contact";
 import Lead from "./Lead";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -53,6 +54,7 @@ function App() {
 
       <About />
       <Contact />
+      <Footer />
     </>
   );
 }
