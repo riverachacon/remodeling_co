@@ -18,6 +18,9 @@ body {
   padding-right: 10rem;
   /* opacity: 0.7; */
 }
+.accordeon {
+  display: none;
+}
 nav {
   position: fixed;
   width: 100%;
@@ -114,5 +117,57 @@ img {
   justify-content: center;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
+  .maxNav {
+    display: none;
+  }
+  .accordeon {
+    display: flex;
+    padding-left: 10rem;
+    background: rgba(212, 212, 208, 0.598); /*  opacity  */
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10rem;
+    position: relative;
+  }
+  .accordeon img {
+    width: 6rem;
+    padding-right: 6rem;
+  }
+  .accordeon ul {
+    display: none; /* hide dropdown by default */
+    flex-direction: column;
+    width: 100%;
+  }
+  .accordeon ul.open {
+    /* show the dropdown when toggled */
+    display: flex;
+  }
+  .accordeon ul li {
+    width: 100%;
+    text-align: center;
+  }
+  .accordeon ul li a {
+    display: block;
+    padding: 10px; /*  padding for spacing */
+  }
+  .imgContainer {
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .imgContainer img {
+    max-width: 100%;
+    margin: 5px 0;
+  }
+  .vl {
+    display: none;
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
